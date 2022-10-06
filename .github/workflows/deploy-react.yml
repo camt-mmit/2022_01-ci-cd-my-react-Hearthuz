@@ -23,7 +23,7 @@ jobs:
           git init -b gh-pages ./gh-pages
           cd ./gh-pages
           git remote add -t gh-pages origin \
-          https://git:${{ github.token }}@github.com/${{github.repository}}.git
+          https://git:${{ github.token }}@github.com/${{ github.repository }}.git
           git pull origin gh-pages
           rm -rf ./*
           cp rf ../build/* ./

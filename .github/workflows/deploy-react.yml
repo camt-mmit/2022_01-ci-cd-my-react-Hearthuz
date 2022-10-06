@@ -16,9 +16,8 @@ jobs:
       - run: |
           git config --global user.email "${{ github.event.pusher.email }}"
           git config --global user.name "${{ github.actor }}"
-      - run: npm install -g yarn
-      - run: yarn install
-      - run: PUBLIC_URL=/${{ github.event.repository.name }} yarn run deploy
+      - run: npm install
+      - run: PUBLIC_URL=/${{ github.event.repository.name }} npm run deploy
       - run: |
           mkdir ./gh-pages
           git init -b gh-pages ./gh-pages
@@ -32,4 +31,3 @@ jobs:
           git commit -m "${{github.actor}} deploy"
           git push origin gh-pages
           cd ..
-      

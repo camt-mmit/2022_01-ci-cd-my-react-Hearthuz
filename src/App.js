@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React EIEI2
+          Learn React EIEI3
         </a>
       </header>
     </div>

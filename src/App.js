@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React EIEI45.5
+          Learn React EIEI45.75
         </a>
       </header>
     </div>
